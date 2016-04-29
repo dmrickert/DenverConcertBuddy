@@ -1,1 +1,22 @@
-A Google Calendar creator for concert events.
+This project contains multiple pieces!
+
+The westwood_scrapey.py file holds a class that will scrape Westword's concert
+table.  This is the best source for concert listings in Denver that I've found.
+
+The denver_concert_buddy file interacts with the westwood_scrapey file to provide
+a layer of abstraction.  You'll want to plug whatever bot into this guy, I used
+GroupMe.
+
+The groupme_buddy handles all of the groupme tasks including interpretting the
+messages.  I have very basic text interpretation going on.  Unfortunately, this
+requires python3 as the groupy library requires python3.
+
+Be sure to copy groupme.template to groupme.cfg and add your own groupme credentials
+if you choose to use groupme.
+
+NOTE: While this project could do a lot of things, I have reached the point of
+the most value for my time.  Feel free to add better language recognition, write
+concerts to a database, so on and so forth.
+
+You can crontab the whole thing with:
+* * * * * python3 /path/to/groupme_buddy.py >> /path/to/logfile
