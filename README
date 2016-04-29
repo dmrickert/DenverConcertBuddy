@@ -15,7 +15,7 @@ Be sure to copy groupme.template to groupme.cfg and add your own groupme credent
 if you choose to use groupme.
 
 NOTE: While this project could do a lot of things, I have reached the point of
-the most value for my time.  Feel free to add better language recognition, write
+the most value for the time.  Feel free to add better language recognition, write
 concerts to a database, so on and so forth.
 
 You can crontab the whole thing with:
